@@ -27,7 +27,7 @@
             "prototype": "montage/ui/text.reel",
             "properties": {
                 "element": {"#": "text"},
-                "value": "Text"
+                "value": "venkat1"
             },
             "bindings": {
                 "value": {"<-": "@owner.task.title"}
@@ -36,7 +36,11 @@
         "textField": {
             "prototype": "digit/ui/text-field.reel",
             "properties": {
+                "enabled": false,
                 "placeholderValue": "Text"
+            },
+            "_dev": {
+                "isHidden": true
             },
             "bindings": {
                 "value": {"<->": "@owner.task.title"}
